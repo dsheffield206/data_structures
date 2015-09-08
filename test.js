@@ -2,6 +2,8 @@
 
 var app = require(__dirname + './app');
 var expect = require('chai').expect;
+var unique = require('./app');
+var frequencyTwo = require('./app');
 
 
 describe('unique', function() {
