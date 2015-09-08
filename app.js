@@ -6,12 +6,15 @@ var moreSports = ['soccer', 'hockey']
 // array push
 Array.prototype.push.apply(sports, moreSports);
 console.log(sports);
+
 // array pop
 Array.prototype.pop.apply(sports);
 console.log(sports);
+
 // array shift
 Array.prototype.shift(sports);
 console.log(sports);
+
 // array unshift
 Array.prototype.unshift.call(sports, 'football');
 console.log(sports);
@@ -32,8 +35,6 @@ var unique = function(array) {
   }
   return newArray;
 };
-unique();
-
 
 // frequency 2 function
 var frequencyTwo = function(array){
@@ -59,8 +60,6 @@ var frequencyTwo = function(array){
   }
   return maxLetter.slice(1, maxLetter.length);
 }
-frequencyTwo();
-console.log(frequencyTwo(array));
 
 
 exports.unique = unique;

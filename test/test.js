@@ -1,9 +1,7 @@
 'use strict';
 
-var app = require(__dirname + './app');
+var app = require(__dirname + '/../app');
 var expect = require('chai').expect;
-var unique = require('./app');
-var frequencyTwo = require('./app');
 
 
 describe('unique', function() {
@@ -15,7 +13,7 @@ describe('unique', function() {
 
 describe('frequencyTwo', function() {
    it('should find the letter most used in the English language', function() {
-      var testArray = ['david', 'dude', 'add', 'daddy'];
+      var testArray = ['david, dude, add, daddy'];
       expect(app.frequencyTwo(testArray)).to.eql(['d']);
    });
 });
