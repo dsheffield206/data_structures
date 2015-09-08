@@ -12,7 +12,7 @@ Array.prototype.pop.apply(sports);
 console.log(sports);
 
 // array shift
-Array.prototype.shift(sports);
+Array.prototype.shift.apply(sports);
 console.log(sports);
 
 // array unshift
@@ -44,7 +44,8 @@ var frequencyTwo = function(array){
   var maxLetter = [];
 
   for (var i = 0; i < array.length; i++) {
-      current = arrayString.charAt(i);
+
+      current = array.toString.charAt(i);
       if (!seen[current]) {
           seen[current] = 1;
       } else {
