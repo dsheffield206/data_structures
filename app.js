@@ -42,10 +42,10 @@ var frequencyTwo = function(array){
   var current;
   var maxCount = 0;
   var maxLetter = [];
+  var arrayString = array.toString();
 
   for (var i = 0; i < array.length; i++) {
-
-      current = array.toString.charAt(i);
+      current = arrayString.charAt(i);
       if (!seen[current]) {
           seen[current] = 1;
       } else {
